@@ -90,10 +90,9 @@ class PlacesMenu extends PanelMenu.Button {
     constructor() {
         super(0.5, _('Places'));
 
-        let label = new St.Label({
-            text: _('Places'),
-            y_expand: true,
-            y_align: Clutter.ActorAlign.CENTER,
+        let label = new St.Icon({
+            icon_name: 'folder-symbolic',
+            style_class: 'system-status-icon',
         });
         this.add_child(label);
 
